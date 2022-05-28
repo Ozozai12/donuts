@@ -45,7 +45,43 @@ body {
   font-size: 24px;
 }
 
-.hero {
-  background-color: green;
+.button {
+  font-family: 'Caveat Brush';
+  font-size: 24px;
+  width: 158px;
+  height: 45px;
+  border: none;
+  border-radius: 25px;
+  color: #FFFFFF;
+  background-color: #AB816C;
+}
+
+.hero__section {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.hero__title {
+  font-family: 'Caveat Brush';
+  font-size: 30px;
+  line-height: 38px;
+  max-width: 224px;
+  margin-bottom: 8px;
+  color: #2E2520;
+}
+
+.hero__description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 32px;
+  color: #2E2520;
+}
+
+.hero__button {
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=index.css.map */

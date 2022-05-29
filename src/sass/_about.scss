@@ -1,0 +1,37 @@
+#more {
+    display: none;
+}
+
+.about__img {
+    margin-bottom: 16px;
+}
+
+.about__title {
+    line-height: 1.25;
+    color: $main-icons-color;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.about__text {
+    color: $main-text-color;
+    line-height: 1.21;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.section__text {
+    margin-bottom: 16px;
+}
+
+.btn__more {
+    font-family: 'Caveat Brush';
+    font-size: 18px;
+    line-height: 1.27;
+    text-align: center;
+    color: $details-color;
+    border: none;
+    background-color: $button-text-color;
+    padding: 0;
+    margin-bottom: 16px;
+}

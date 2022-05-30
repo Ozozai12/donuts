@@ -67,9 +67,155 @@ body {
   font-size: 24px;
 }
 
-.item {
-  color: yellowgreen;
-  background-color: teal;
+.about__img {
+  margin-bottom: 16px;
+}
+
+.about__title {
+  line-height: 1.25;
+  color: #2E2520;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.about__text {
+  color: #2E2520;
+  line-height: 1.21;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.hide-text {
+  display: none;
+}
+
+.label {
+  display: inline-block;
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.27;
+  text-align: center;
+  color: #AB816C;
+}
+
+.input:checked ~ .hide-text {
+  display: block;
+}
+
+.less {
+  display: none;
+  margin-top: 16px;
+}
+
+.input:checked ~ .label .more {
+  display: none;
+}
+
+.input:checked ~ .label .less {
+  display: inline;
+  margin-top: 16px;
+}
+
+.button {
+  font-family: 'Caveat Brush';
+  font-size: 18px;
+  width: 145px;
+  height: 40px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 25px;
+  color: #FFFFFF;
+  background-color: #AB816C;
+}
+
+.hero__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+}
+
+.hero__title {
+  font-family: 'Caveat Brush';
+  font-size: 30px;
+  line-height: 1.27;
+  max-width: 224px;
+  margin-bottom: 8px;
+  color: #2E2520;
+}
+
+.hero__description {
+  font-weight: 500;
+}
+
+.hero__button {
+  margin-bottom: 40px;
+}
+
+.reg-box {
+  margin-top: 32px;
+  width: 280px;
+  height: 466px;
+  border-radius: 150px 150px 0 0;
+  background-color: #FFFFF9;
+  text-align: center;
+  padding-top: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+          box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+}
+
+.reg-box .reg-box__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.23;
+  margin-top: 20px;
+}
+
+.reg-box .reg-box__item.border {
+  padding-top: 8px;
+  border-top: 1px solid rgba(171, 129, 108, 0.5);
+}
+
+.reg-box .reg-box__item:last-child {
+  font-weight: 400;
+}
+
+.reg-box__list {
+  width: 100%;
+  margin-top: 20px;
+  color: rgba(171, 129, 108, 0.5);
+  background-color: #fffff9;
+  border: none;
+  border-bottom: 1px solid #AB816C;
+}
+
+.reg-box__list::-webkit-input-placeholder {
+  color: rgba(171, 129, 108, 0.5);
+}
+
+.reg-box__list:-ms-input-placeholder {
+  color: rgba(171, 129, 108, 0.5);
+}
+
+.reg-box__list::-ms-input-placeholder {
+  color: rgba(171, 129, 108, 0.5);
+}
+
+.reg-box__list::placeholder {
+  color: rgba(171, 129, 108, 0.5);
 }
 
 .oleg {

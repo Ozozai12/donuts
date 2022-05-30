@@ -1,0 +1,56 @@
+
+
+.about__img {
+    margin-bottom: 16px;
+}
+
+.about__title {
+    line-height: 1.25;
+    color: $main-icons-color; 
+    text-align: center;
+    margin-bottom: 8px;
+}
+   
+
+.about__text {
+    color: $main-text-color; 
+    line-height: 1.21;
+    display: block;
+    margin-bottom: 16px;
+
+}
+
+
+.hide-text {
+    display: none;
+}
+
+.label {
+    display: inline-block;
+    font-family: 'Caveat Brush';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.27;
+    text-align: center;
+    color: $details-color;
+}
+
+.input:checked~.hide-text {
+    display: block;
+}
+
+.less {
+    display: none;
+    margin-top: 16px;
+}
+
+.input:checked~.label .more {
+    display: none;
+}
+
+.input:checked~.label .less {
+    display: inline;
+    margin-top: 16px;
+
+}

@@ -19,7 +19,8 @@
     @include mq(desktop) {
         margin: 0;
         height: auto;
-       
+        min-width: 502px;
+        
     }
 
 }
@@ -38,6 +39,8 @@
         text-align: left;
         font-size: 36px;
         line-height: 1.8;
+        margin-bottom: 10px;
+        margin-top: 43px;
 
     }
 }
@@ -47,9 +50,9 @@
         margin-right: 32px;
         width: calc(100% / 2);
     }
-   
-    @include mq(desktop-only) {
-            width: calc(100% / 2);
+       @include mq(desktop) {
+           width: 100%;
+           
         }
     }
 
@@ -60,6 +63,7 @@
 
     @include mq(desktop) {
         font-size: 18px;
+        margin-bottom: 21px;
     }
 
 }
@@ -71,6 +75,8 @@
     @include mq(desktop) {
         display: block;
         font-size: 18px;
+        margin-bottom: 43px;
+
     }
 
 }
@@ -104,11 +110,11 @@
     display: inline;
 
 }
-
+.more {
+    padding-bottom: 11px;
+}
 .about-container {
-    
-
-    @include mq(mobile-only) {
+        @include mq(mobile-only) {
         width: 320px;
         padding-left: 20px;
         padding-right: 21px;
@@ -140,8 +146,7 @@
     }
 
     @include mq(desktop) {
-        // width: calc(100% / 2);
-        
+               
         display: block;
         height: auto;
         margin-left: 139px;

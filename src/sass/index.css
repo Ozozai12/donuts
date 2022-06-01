@@ -82,49 +82,34 @@ body {
 }
 
 .about {
-  margin-top: 5px;
+  padding-top: 5px;
 }
 
 @media (min-width: 768px) and (max-width: 1279.98px) {
   .about {
-    margin-top: 69px;
+    padding-top: 69px;
   }
 }
 
 @media (min-width: 1280px) {
   .about {
-    margin-top: 111px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .about-container {
-    width: 320px;
-    padding-left: 20px;
-    padding-right: 21px;
+    padding-top: 111px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1279.98px) {
-  .about-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-@media (min-width: 1280px) {
-  .about-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+@media (min-width: 768px) and (max-width: 1279.98px) and (min-width: 1280px) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .about__img {
@@ -235,39 +220,6 @@ body {
 
 .input:checked ~ .label .less {
   display: inline;
-}
-
-@media (max-width: 767.98px) {
-  .about-container {
-    width: 320px;
-    padding-left: 20px;
-    padding-right: 21px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1279.98px) {
-  .about-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .about-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 1279.98px) {

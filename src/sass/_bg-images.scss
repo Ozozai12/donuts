@@ -1,0 +1,60 @@
+.bg-images {
+    
+    background-image: 
+        url('../images/bg/bg-up--mobile.png'),
+        url('../images/bg/bg-down--mobile.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, center bottom 181px;
+    background-size: auto;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url('../images/bg/bg-up--mobile@2x.png'),
+                url('../images/bg/bg-down--mobile@2x.png');
+            background-repeat: no-repeat, no-repeat;
+            background-position: top center, center bottom 181px;
+            background-size: 320px auto; 
+        }
+
+                @include mq(tablet) {
+                    background-image:
+                            url('../images/bg/bg-up--tablet.png'),
+                            url('../images/bg/bg-down--tablet.png');
+                        background-repeat: no-repeat, no-repeat;
+                        background-position: top center, center top 1239px;
+                        background-size: auto;
+                    
+                        @media (min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                            background-image:
+                                url('../images/bg/bg-up--tablet@2x.png'),
+                                url('../images/bg/bg-down--tablet@2x.png');
+                            background-repeat: no-repeat, no-repeat;
+                            background-position: top center, center top 1239px;
+                            background-size: 768px auto;
+                        }
+                }
+
+                        @include mq(desktop) {
+                            background-image:
+                                url('../images/bg/bg-up--desktop.png'),
+                                url('../images/bg/bg-down--desktop.png');
+                            background-repeat: no-repeat, no-repeat;
+                            background-position: top center, bottom center;
+                            background-size: auto;
+    
+                            @media (min-device-pixel-ratio: 2),
+                            (min-resolution: 192dpi),
+                            (min-resolution: 2dppx) {
+                                background-image:
+                                    url('../images/bg/bg-up--desktop@2x.png'),
+                                    url('../images/bg/bg-down--desktop@2x.png');
+                                background-repeat: no-repeat, no-repeat;
+                                background-position: top center, bottom center;
+                                background-size: 1280px auto;
+                            }
+                        }
+}

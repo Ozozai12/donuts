@@ -1,39 +1,50 @@
 .about {
     margin-top: 5px;
+
     @include mq(tablet-only) {
         margin-top: 69px;
     }
-    @include mq(desktop-only) {
+
+    @include mq(desktop) {
         margin-top: 111px;
     }
 }
 
 .about-container {
+    @include mq(mobile-only) {
+        width: 320px;
+        padding-left: 20px;
+        padding-right: 21px;
+    }
 
     @include mq(tablet-only) {
         display: flex;
         justify-content: space-between;
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     @include mq (desktop) {
         display: flex;
-        justify-content: space-between;
+        
     }
 }
 
-
-
-
-
-
 .about__img {
+    margin-bottom: 16px;
 
-    @include mq(mobile-only) {
-        margin-bottom: 16px;
+    @include mq(tablet-only) {
+        margin: 0;
+        height: auto;
     }
-    
-     
-    
+
+    @include mq(desktop) {
+        margin: 0;
+        height: auto;
+        min-width: 502px;
+
+    }
 
 }
 
@@ -43,28 +54,40 @@
 
     @include mq(tablet) {
         text-align: left;
-        margin-top: 21px;
         margin-bottom: 16px;
-        
+        margin-top: 21px;
     }
 
     @include mq(desktop) {
         text-align: left;
-        margin-top: 43px;
+        font-size: 36px;
+        line-height: 1.8;
         margin-bottom: 10px;
+        margin-top: 43px;
+
+    }
+}
+
+.about-picture {
+    @include mq(tablet-only) {
+        margin-right: 32px;
+        width: calc(100% / 2);
+    }
+
+    @include mq(desktop) {
+        width: 100%;
+
     }
 }
 
 
-
-
 .about__text {
     display: block;
-    
+    margin-bottom: 16px;
 
     @include mq(desktop) {
         font-size: 18px;
-        line-height: 1.219;
+        margin-bottom: 21px;
     }
 
 }
@@ -76,7 +99,8 @@
     @include mq(desktop) {
         display: block;
         font-size: 18px;
-        margin-bottom: 0;
+        margin-bottom: 43px;
+
     }
 
 }
@@ -93,7 +117,7 @@
     }
 }
 
-.input:checked~.hide-about-text{
+.input:checked~.hide-about-text {
     display: block;
 }
 
@@ -111,7 +135,28 @@
 
 }
 
+.about-container {
+    @include mq(mobile-only) {
+        width: 320px;
+        padding-left: 20px;
+        padding-right: 21px;
+    }
 
+    @include mq(tablet-only) {
+        display: flex;
+        justify-content: space-between;
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @include mq (desktop) {
+        display: flex;
+        justify-content: space-between;
+        
+
+    }
+}
 
 .about-box {
     @include mq(tablet-only) {

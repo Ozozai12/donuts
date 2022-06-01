@@ -223,6 +223,16 @@ body {
   }
 }
 
+@media (min-width: 1280px) {
+  .about-box {
+    width: calc(100% / 2);
+    max-width: 392px;
+    display: block;
+    height: auto;
+    margin-left: 139px;
+  }
+}
+
 .button {
   font-family: 'Caveat Brush';
   font-size: 18px;
@@ -318,8 +328,24 @@ body {
   margin-top: 16px;
 }
 
+.contact-form__email:focus:valid {
+  border-color: rgba(0, 128, 0, 0.5);
+}
+
+.contact-form__email:focus:invalid {
+  border-color: rgba(255, 0, 0, 0.5);
+}
+
 .contact-form__text {
   margin-top: 20px;
+}
+
+.contact-form__text:focus:valid {
+  border-color: rgba(0, 128, 0, 0.5);
+}
+
+.contact-form__text:focus:invalid {
+  border-color: rgba(255, 0, 0, 0.5);
 }
 
 .hero__container {
